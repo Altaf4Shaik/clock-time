@@ -1,0 +1,202 @@
+/* EXTRACTING ALL DEFAULT MARGINS AND PADDINGS */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0;
+    font-family: 'EXO 2', sans-serif;
+}
+/* SIZE AND POSITIONS FOR MAIN BODY */
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+}
+/* SIZE FOR CLOCK'S MAIN BODY */
+.clock {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 5px solid #111;
+}
+/* UNNECESSARY INNER SHADOW EFFECT */
+.clock::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(285deg, rgba(0, 0, 0, 0.175) 50%, rgba(0, 0, 0, 0.1) 50%);
+}
+/* FOR THE CLOCK'S NUT OR HANDLE */
+.clock::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: BLACK;
+    border-radius: 50%;
+}
+/* ADDING ALL NUMBER'S POSITIONS & EFFECTS */
+.num {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+/* ADDING THE CLOCK'S NUMBER MARKS */
+.num::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 12px;
+    background-color: BLACK;
+}
+/* IT'S NOTHING JUST IGNORE IT */
+.rotate {
+    padding: 18px;
+}
+/* POSITIONINGS FOR NUMBER 1 */
+.num1 {
+    transform: rotate(30deg);
+}
+/* POSITIONINGS FOR NUMBER 1 */
+.num1 .rotate {
+    transform: rotate(-30deg);
+}
+/* POSITIONINGS FOR NUMBER 2 */
+.num2 {
+    transform: rotate(60deg);
+}
+/* POSITIONINGS FOR NUMBER 2 */
+.num2 .rotate {
+    transform: rotate(-60deg);
+}
+/* POSITIONINGS FOR NUMBER 3 */
+.num3 {
+    transform: rotate(90deg);
+}
+/* POSITIONINGS FOR NUMBER 3 */
+.num3 .rotate {
+    transform: rotate(-90deg);
+}
+/* POSITIONINGS FOR NUMBER 4 */
+.num4 {
+    transform: rotate(120deg);
+}
+/* POSITIONINGS FOR NUMBER 4 */
+.num4 .rotate {
+    transform: rotate(-120deg);
+}
+/* POSITIONINGS FOR NUMBER 5 */
+.num5 {
+    transform: rotate(150deg);
+}
+/* POSITIONINGS FOR NUMBER 5 */
+.num5 .rotate {
+    transform: rotate(-150deg);
+}
+/* POSITIONINGS FOR NUMBER 6 */
+.num6 {
+    transform: rotate(180deg);
+}
+/* POSITIONINGS FOR NUMBER 6 */
+.num6 .rotate {
+    transform: rotate(-180deg);
+}
+/* POSITIONINGS FOR NUMBER 7 */
+.num7 {
+    transform: rotate(210deg);
+}
+/* POSITIONINGS FOR NUMBER 7 */
+.num7 .rotate {
+    transform: rotate(-210deg);
+}
+/* POSITIONINGS FOR NUMBER 8 */
+.num8 {
+    transform: rotate(240deg);
+}
+/* POSITIONINGS FOR NUMBER 8 */
+.num8 .rotate {
+    transform: rotate(-240deg);
+}
+/* POSITIONINGS FOR NUMBER 9 */
+.num9 {
+    transform: rotate(270deg);
+}
+/* POSITIONINGS FOR NUMBER 9 */
+.num9 .rotate {
+    transform: rotate(-270deg);
+}
+/* POSITIONINGS FOR NUMBER 10 */
+.num10 {
+    transform: rotate(300deg);
+}
+/* POSITIONINGS FOR NUMBER 10 */
+.num10 .rotate {
+    transform: rotate(-300deg);
+}
+/* POSITIONINGS FOR NUMBER 11 */
+.num11 {
+    transform: rotate(330deg);
+}
+/* POSITIONINGS FOR NUMBER 11 */
+.num11 .rotate {
+    transform: rotate(-330deg);
+}
+/* POSITIONINGS FOR NUMBER 12 */
+.num12 {
+    transform: rotate(360deg);
+}
+/* POSITIONINGS FOR NUMBER 12 */
+.num12 .rotate {
+    transform: rotate(-360deg);
+}
+/* SIZE AND POSITIONS FOR ALL HANDS */
+.hand {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+/* SIZE AND POSITIONS FOR ALL HANDS */
+.hand div {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translateX(-50%);
+    background: #000000;
+}
+/* SIZE FOR SECOND'S HAND */
+.second {
+    width: 1px;
+    height: 35%;
+}
+/* SIZE FOR MINUTE'S HAND */
+.minute {
+    width: 2px;
+    height: 31%;
+    border-radius: 2px;
+}
+/* SIZE FOR HOUR'S HAND */
+.hour {
+    width: 3px;
+    height: 23%;
+    border-radius: 4px;
+}
+/* AND THAT'S IT, ALL CSS CODES ENDS HERE */
