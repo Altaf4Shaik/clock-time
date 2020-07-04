@@ -1,2 +1,4 @@
-# clock-time
-Click
+---
+permalink: /Index.html
+---
+
